@@ -15,7 +15,12 @@
 */
 
 //Code here
+var me = {
+  name: 'Avery',
+  age: 18
+}
 
+alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +31,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'AC/DC',
+  food: 'Chinese',
+  person: 'Obama',
+  book: 'Mobie Dick',
+  movie: 'Terminator',
+  holiday: 'Christmas'
+};
 
 
 /*
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Ford';
+favoriteThings.brand = 'Crisco';
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,8 +70,12 @@
 */
 
 //Code here
+var backPack = {
 
-
+};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'black';
 
 /*
   After you do the above, alert your entire backPack object.
@@ -65,7 +83,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -97,8 +115,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
 
@@ -109,7 +127,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+};
 
 
 /*
@@ -118,7 +138,13 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){
+  alert('hello')
+};
+methodCollection.logHello = function(){
+  console.log('hello');
+  
+};
 
 
 /*
@@ -126,7 +152,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +164,9 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  return {'name': name, 'birthday': birthday, 'ssn': ssn}
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -146,7 +175,8 @@ var user2 = {
   Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
-
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {"cardNumber": cardNumber, "expirationDate": expirationDate, "securityCode": securityCode}
+}
 
